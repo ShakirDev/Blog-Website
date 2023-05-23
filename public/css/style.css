@@ -1,0 +1,401 @@
+body {
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+    /* Additional CSS properties */
+    /* ... */
+    margin: 0;
+   
+  }
+
+  /*navbar styling*/
+  .navbar {height: 80px;
+    background-color: #fefae0;
+    padding-left: 90px;
+    padding-right: 90px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #faedcd;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    
+  }
+  
+  .logo {
+      margin-right: 10px;
+      /* Adjust the margin as needed */
+
+      margin-right: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+  }
+
+  .mylogo {
+
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Adjust the height proportionally */
+
+
+  }
+  .navmenu ul {
+    display: flex;
+    gap: 30px; 
+    
+    
+
+  }
+ 
+  
+  .navmenu ul li {
+    list-style: none;
+  }
+  .navmenu ul li a {
+    text-decoration: none; 
+    font-family: system-ui;
+    color : #222222
+  }
+
+  /*Ul Li Hover effects*/
+  ul li {
+    position: relative;
+  }
+  
+  ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  ul li:hover::after {
+    transform: scaleX(1);
+    background-color: #d4a373; /* Change underline color on hover */
+  }
+  
+  ul li:hover a {
+    color: #d4a373; /* Change text color on hover */
+  }
+
+  /*footer styling*/
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 90px;
+    background-color: #fefae0;
+    padding-right: 90px;
+    height: 275px;
+    padding-top: 40px;
+  }
+  
+  .footer-info {
+    width: 30%;
+  }
+  
+  .footer-info .mylogo {
+    width: 200px;
+    height: auto;
+  }
+  
+  .footer-info p {
+    font-family: 'Mulish', sans-serif;
+  }
+  
+  .footer-menu {
+    width: 30%;
+    align-items: center;
+  }
+  
+  .footer-menu p {
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-menu ul.mobile-menu-list {
+    display: inline-block;
+    
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-menu ul.mobile-menu-list li a {
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    color: #222222;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .footer-form {
+    width: 30%;
+  }
+  
+  .footer-form p {
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-form form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  
+    .footer-form input[type="email"] {
+        padding: 5px;
+        width: 250px;
+        font-family: 'Mulish', sans-serif;
+        height: 30px;
+        border-radius: 10px;
+    }
+ 
+ 
+    .footer-form button[type="submit"] {
+        padding: 5px 20px;
+        background-color: #d4a373;
+        border: none;
+        color: #fff;
+        font-family: 'Mulish', sans-serif;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+  
+  
+  .footer-form button[type="submit"]:hover {
+    background-color: #ba824f;
+  }
+
+  .copyright-info{height: 40px;
+    background-color: #222222;
+    margin-top: -15px;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+    /*Style for hero section*/
+    .hero {
+        height: 450px;
+        background-color: #faedcd;
+        background-image: url("/images/kenny-eliason-3GZNPBLImWc-unsplash.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-left: 90px;
+        padding-right: 90px;
+        color: #fefae0;
+    }
+
+    /*style for about page*/
+    .about-main-content{display: flex;
+        padding-left: 90px;
+        padding-right: 90px;}
+
+    .aboutus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        }
+
+    .side-div {
+        display: flex;
+        width: 50%;
+        justify-content: flex-end;
+        }
+  
+
+/*Compose Form Style*/
+
+  
+.custom-form {
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .custom-form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  .custom-form-file-input {
+    display: none;
+  }
+  
+  .custom-form-file-input-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-form-file-input-label:hover {
+    background-color: #2980b9;
+  }
+  
+  .custom-form-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-form-submit:hover {
+    background-color: #27ae60;
+  }
+  
+  .custom-form-group {
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  
+  .custom-form-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999;
+  }
+
+
+  /*Post Cards*/
+
+  .post-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: auto;
+    padding: 30px 90px 30px 90px;
+  }
+  
+  .post-container {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-card {
+    width: calc(30% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  .featured-image img {
+    width: 100%;
+    border-radius: 6px;
+  }
+  
+  .post-body h2 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .post-body p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .post-h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+  
+  .post-load-more-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  
+  .post-load-more-btn button, .read-more-button {
+    padding: 10px 20px;
+    background-color: #d4a373;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .post-load-more-btn button:hover,.read-more-button:hover {
+    background-color: #ba824f;
+  }
+
+  .button-div {
+    margin: 20px 0px;
+}
+
+
+  /*Single Post Page*/
+  .sp-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .sp-featured-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .sp-post-title {
+    margin-bottom: 20px;
+  }
+  
+  .sp-post-title h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .sp-post-title p {
+    font-size: 16px;
+    color: #555;
+  }

@@ -1,0 +1,153 @@
+  /*Mobile responve*/
+
+
+@media (max-width: 768px) {
+  /* Mobile-specific styles */
+  .navbar{padding-left: 10px;
+    padding-right: 10px;}
+  .navmenu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+
+  .menu-list {
+    display: none;
+    padding-top: 10px;
+  }
+
+  .menu-list.show {
+    display: block;
+  }
+}
+
+/*Mobile Devices*/
+@media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      height: auto;
+    }
+  
+    .footer-info {
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .footer-info .mylogo {
+      width: 150px;
+      height: auto;
+    }
+  
+    .footer-menu {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .footer-menu ul.mobile-menu-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-form {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .footer-form form {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+  
+    .footer-form input[type="email"] {
+        width: auto;
+    }
+    .footer-form button[type="submit"] {
+        padding: 15px 20px;}
+  
+  }
+
+  /*about/contact page style*/
+  @media (max-width: 768px) {
+    .about-main-content {
+      flex-direction: column-reverse;
+    }
+  
+    .aboutus,
+    .side-div {
+      margin: 20px;
+    }
+    .about-main-content {
+        
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    .aboutus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        }
+        .side-div {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            }
+      
+
+
+
+  }
+
+  /*Post Card*/
+
+  @media (max-width: 768px) {
+    .post-row {
+      padding: 30px;
+    }
+  
+    .post-card {
+      width: calc(100% - 20px);
+    }
+  }
+ 
+
+
+ /*Single Post Page*/
+
+  @media only screen and (max-width: 600px) {
+    .sp-main {
+      padding: 10px;
+    }
+    
+    .sp-featured-image img {
+      max-width: 100%;
+    }
+    
+    .sp-post-title h2 {
+      font-size: 20px;
+    }
+    
+    .sp-post-title p {
+      font-size: 14px;
+    }
+  }

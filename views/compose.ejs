@@ -1,0 +1,30 @@
+<%- include('./partials/header.ejs'); -%>
+<div>
+
+    <h2 class="compose"></h2>
+
+    <form class="custom-form" action="/compose" method="POST">
+        <div class="custom-form-group">
+          <i class="fas fa-heading"></i>
+          <input type="text" id="title" name="title" class="custom-form-input" placeholder="Enter the title" required>
+        </div>
+        
+        <div class="custom-form-group">
+          <label for="body" class="custom-form-label">Blog's Body:</label>
+          <textarea id="body" name="formbody" class="custom-form-input" placeholder="Enter the blog's body" required></textarea>
+        </div>
+        
+        <div class="custom-form-group">
+          <input type="file" id="image" name="image" class="custom-form-file-input" accept="image/*">
+          <label for="image" class="custom-form-file-input-label">Upload Image</label>
+        </div>
+        
+        <button type="submit" class="custom-form-submit">Submit</button>
+      </form>
+
+
+</div>
+
+
+
+<%- include('./partials/footer.ejs'); -%>

@@ -1,0 +1,38 @@
+<%- include('./partials/header.ejs'); -%>
+
+<div class="post-h2">
+    <h2>Blogs</h2>
+  </div>
+  
+  <div class="post-row">
+    <% let counter = 0; %>
+    <% posts.forEach(function(post, index) { %>
+      <div class="post-card">
+        <div class="post-container">
+          <div class="featured-image">
+            <img src="/images/gabriel-heinzer-g5jpH62pwes-unsplash (1).jpg" alt="Post Image">
+          </div>
+          <div class="post-body">
+            <h2><%= post.title %></h2>
+            <% var truncatedBody = post.body.length > 40 ? post.body.substring(0, 40) + '...' : post.body; %>
+            <p id="post-body"><%= truncatedBody %></p>
+          </div>
+          <div class="button-div">
+            <a href="/posts/<%= post.title %>" class="read-more-button">Read More</a>
+             
+          </div>
+        </div>
+      </div>
+      <% counter++; %>
+      <% if (counter % 3 === 0 || index === posts.length - 1) { %>
+        </div><% if (index !== posts.length - 1) { %><div class="post-row"><% } %>
+      <% } %>
+    <% }); %>
+  </div>
+  
+  <div class="post-load-more-btn">
+    <a href="/posts/" class="read-more-button">See More</a>
+  </div>
+
+<%- include('./partials/footer.ejs'); -%>
+
